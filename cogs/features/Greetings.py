@@ -45,8 +45,8 @@ class Greetings(commands.Cog):
     @commands.Cog.listener()
     async def on_member_join(self, new_member):
         wait_time = 60
-        general_id = discord.utils.get(bot.get_all_channels(), name = "😃┃general-chat")
-        general_channel = bot.get_channel(general_id.id)
+        general_id = discord.utils.get(self.bot.get_all_channels(), name = "😃┃general-chat")
+        general_channel = self.bot.get_channel(general_id.id)
         embed = self.welcome_embed(new_member)
         message = await general_channel.send(embed = embed)
         await message.add_reaction("👋")
