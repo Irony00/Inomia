@@ -8,7 +8,7 @@ class Talk(commands.Cog):
         self.bot = bot
     
     @commands.command(aliases = ["talk"])
-    async def _talk(ctx, *, question, user: discord.Member = None):
+    async def _talk(self, ctx, *, question, user: discord.Member = None):
         async with ctx.typing():
             url = 'https://www.pandorabots.com/pandora/talk?botid=cd44746d1e3755a1'
             question_filtered = question.replace("insomnia", "spacegy4")
