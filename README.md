@@ -1,8 +1,6 @@
 # Inomia
 
 Before running the script you would need the Bot Token stored inside a .env file
-
-.env
 ```
 token = [Inomia or Your Bot Token]
 ```
