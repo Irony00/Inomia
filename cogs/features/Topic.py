@@ -66,7 +66,7 @@ class Topic(commands.Cog):
         "What do you wish you’d known before having kids? ",
         "What was the first big purchase you made as an adult?",
         "How did you know when you fell in love?",
-        "What was the first big purchase you made as an adult?”",
+        "What was the first big purchase you made as an adult?",
         "Have you kept any memorabilia from your childhood?",
         "What do you miss most about being a child? A teenager? My age?",
         "What about the current world would be most surprising to your younger self?",
