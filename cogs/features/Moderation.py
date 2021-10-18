@@ -3,7 +3,7 @@ import asyncio
 import discord
 from discord.ext import commands
 
-class Talk(commands.Cog):
+class Moderation(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
     
@@ -130,4 +130,4 @@ class Talk(commands.Cog):
             await ctx.send(f"**{ author }** is already unmuted")
     
 def setup(bot):
-    bot.add_cog(Talk(bot))
+    bot.add_cog(Moderation(bot))
