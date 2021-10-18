@@ -129,5 +129,16 @@ class Moderation(commands.Cog):
         else:
             await ctx.send(f"**{ author }** is already unmuted")
     
+    @commands.command(aliases = ["clear"])
+    async def _clear(self, ctx, amount = 5):
+        await ctx.channel.purge(limit = amount)
+        success_msg = await ctx.send("I have deleted `{} {}`!".format(
+            amount, 
+            "messages" if amount > 1 else "message"
+        ))
+        wait_time = 2
+        await asyncio.sleep(wait_time)
+        await success_msg.delete()
+
 def setup(bot):
     bot.add_cog(Moderation(bot))
