@@ -98,7 +98,7 @@ class Moderation(commands.Cog):
             await ctx.send("No one with that username is on the Ban List")
 
     @commands.command(aliases = ["mute"])
-    @commands.has_permissions(mute_members = True)
+    @commands.has_permissions(manage_roles = True)
     async def _mute(self, ctx, member : discord.Member, *, reason = None):
         wait_time = 10 * 60
         reason = "Dumbass forgot to put a reason" if reason == None else reason
@@ -110,27 +110,25 @@ class Moderation(commands.Cog):
             text = "Unmute: 10 Minutes"
         )
 
-        author = ctx.message.author
         muted_role = discord.utils.get(ctx.guild.roles, name="Muted")
         await member.add_roles(muted_role)
-        await ctx.send(f"**{ author }** has been muted", embed = embed)
+        await ctx.send(f"**{ member }** has been muted", embed = embed)
 
         await asyncio.sleep(wait_time)
         if muted_role in member.roles:
             await member.remove_roles(muted_role)
-            await ctx.send(f"**{ author }** has been unmuted")
+            await ctx.send(f"**{ member }** has been unmuted")
     
     @commands.command(aliases = ["unmute"])
-    @commands.has_permissions(mute_members = True)
+    @commands.has_permissions(manage_roles = True)
     async def _unmute(self, ctx, member : discord.Member, *, reason = None):
         reason = "Dumbass forgot to put a reason" if reason == None else reason
-        author = ctx.message.author
         muted_role = discord.utils.get(ctx.guild.roles, name="Muted")
         if muted_role in member.roles:
             await member.remove_roles(muted_role)
-            await ctx.send(f"**{ author }** has been unmuted")
+            await ctx.send(f"**{ member }** has been unmuted")
         else:
-            await ctx.send(f"**{ author }** is already unmuted")
+            await ctx.send(f"**{ member }** is already unmuted")
     
     @commands.command(aliases = ["clear"])
     @commands.has_permissions(manage_messages = True)
