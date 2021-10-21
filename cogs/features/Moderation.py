@@ -7,6 +7,20 @@ class Moderation(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
     
+    @commands.command(aliases = ["announce", "a", "announcement"])
+    @commands.has_permissions(manage_roles = True, ban_members = True)
+    async def _announce(self, ctx, channel : discord.TextChannel, *, announcement):
+        # Creating Embed
+        embed = discord.Embed(
+            description = announcement
+        )
+        embed.set_footer(
+            text = "Team Insomnia",
+            icon_url = "https://media.discordapp.net/attachments/898127603922239513/898816884621848616/yerOW6.jpg?width=524&height=393"
+        )
+
+        await channel.send(embed = embed)
+
     @commands.command(aliases = ["warn"])
     @commands.has_permissions(manage_roles = True, ban_members = True)
     async def _warn(self, ctx, user : discord.User, *, reason = None):
