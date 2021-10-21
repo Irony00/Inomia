@@ -63,11 +63,11 @@ class ReactionColorRoleListener(commands.Cog):
         }
 
         orange_emoji_roles_table = {
-            "ange_tiger" : discord.utils.get(guild.roles, name = "Tiger"),
-            "ange_marigold" : discord.utils.get(guild.roles, name = "Merigold"),
-            "ange_honey" : discord.utils.get(guild.roles, name = "Honey"),
+            "orange_tiger" : discord.utils.get(guild.roles, name = "Tiger"),
+            "orange_merigold" : discord.utils.get(guild.roles, name = "Merigold"),
+            "orange_honey" : discord.utils.get(guild.roles, name = "Honey"),
             "yellow" : discord.utils.get(guild.roles, name = "Yellow"),
-            "ange_light" : discord.utils.get(guild.roles, name = "Light Orange")
+            "orange_light" : discord.utils.get(guild.roles, name = "Light Orange")
         }
 
         cyan_emoji_roles_table = {
@@ -176,7 +176,7 @@ class ReactionColorRoleListener(commands.Cog):
 
         orange_emoji_roles_table = {
             "orange_tiger" : discord.utils.get(guild.roles, name = "Tiger"),
-            "orange_marigold" : discord.utils.get(guild.roles, name = "Merigold"),
+            "orange_merigold" : discord.utils.get(guild.roles, name = "Merigold"),
             "orange_honey" : discord.utils.get(guild.roles, name = "Honey"),
             "yellow" : discord.utils.get(guild.roles, name = "Yellow"),
             "orange_light" : discord.utils.get(guild.roles, name = "Light Orange")
