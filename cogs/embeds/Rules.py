@@ -6,6 +6,7 @@ Please keep the following rules in mind when talking.
 
 ‣ Be respectful
 ‣ No spamming 
+‣ No swearing
 ‣ Any form of racism, gore, etc are forbidden
 ‣ Don't advertise without permission from staffs
 ‣ Talks about religion and politics can be taken to DMs
