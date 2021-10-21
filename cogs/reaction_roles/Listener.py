@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-class ReactionColorRoleListener(commands.Cog):
+class Listener(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
     
@@ -231,4 +231,4 @@ class ReactionColorRoleListener(commands.Cog):
                     await member.remove_roles(role)
 
 def setup(bot):
-    bot.add_cog(ReactionColorRoleListener(bot))
+    bot.add_cog(Listener(bot))

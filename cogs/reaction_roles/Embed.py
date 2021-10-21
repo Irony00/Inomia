@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-class ReactionColorRoleEmbed(commands.Cog):
+class Embed(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
     
@@ -159,4 +159,4 @@ class ReactionColorRoleEmbed(commands.Cog):
         await message.add_reaction("<:cyan_light:900592777996435487>")
 
 def setup(bot):
-    bot.add_cog(ReactionColorRoleEmbed(bot))
+    bot.add_cog(Embed(bot))

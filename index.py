@@ -16,7 +16,8 @@ bot = commands.Bot(
 
 category_list = [
     "embeds",
-    "features"
+    "features",
+    "reaction_roles"
 ]
 cog_manager = CogManager(bot, category_list)
 cog_manager.load_all()

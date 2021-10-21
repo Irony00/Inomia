@@ -99,15 +99,15 @@ class Moderation(commands.Cog):
 
     @commands.command(aliases = ["mute"])
     @commands.has_permissions(manage_roles = True)
-    async def _mute(self, ctx, member : discord.Member, *, reason = None):
-        wait_time = 10 * 60
+    async def _mute(self, ctx, member : discord.Member, amount_time = 10, *, reason = None):
+        wait_time = amount_time * 60
         reason = "Dumbass forgot to put a reason" if reason == None else reason
 
         embed = discord.Embed(
             description = f"**Reason:** { reason }"
         )
         embed.set_footer(
-            text = "Unmute: 10 Minutes"
+            text = f"Unmute: { amount_time } Minutes"
         )
 
         muted_role = discord.utils.get(ctx.guild.roles, name="Muted")
