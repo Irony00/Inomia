@@ -13,13 +13,13 @@ class ReactionColorRoleListener(commands.Cog):
         emoji_name = payload.emoji.name
 
         color_role_embeds_msg_id = {
-            900511856974790666 : "green",
-            900511903875489882 : "blue",
-            900511948305731625 : "black_white",
-            900512013627826217 : "purple_pink",
-            900512058704015450 : "red",
-            900512111329964052 : "orange",
-            900512164064952330 : "cyan"
+            900597171051716608 : "green",
+            900597195600953354 : "blue",
+            900597217591693363 : "black_white",
+            900597241960603648 : "purple_pink",
+            900597400136200262 : "red",
+            900597424828059728 : "orange",
+            900597453613576192 : "cyan"
         }
 
         green_emoji_roles_table = {
@@ -125,13 +125,13 @@ class ReactionColorRoleListener(commands.Cog):
         emoji_name = payload.emoji.name
 
         color_role_embeds_msg_id = {
-            900511856974790666 : "green",
-            900511903875489882 : "blue",
-            900511948305731625 : "black_white",
-            900512013627826217 : "purple_pink",
-            900512058704015450 : "red",
-            900512111329964052 : "orange",
-            900512164064952330 : "cyan"
+            900597171051716608 : "green",
+            900597195600953354 : "blue",
+            900597217591693363 : "black_white",
+            900597241960603648 : "purple_pink",
+            900597400136200262 : "red",
+            900597424828059728 : "orange",
+            900597453613576192 : "cyan"
         }
 
         green_emoji_roles_table = {
