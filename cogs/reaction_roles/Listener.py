@@ -123,6 +123,14 @@ class Listener(commands.Cog):
                     await member.add_roles(role)
                 elif action == "take":
                     await member.remove_roles(role)
+        
+        elif category == "cyan":
+            role = cyan_emoji_roles_table[emoji_name]
+            if member is not None:
+                if action == "give":
+                    await member.add_roles(role)
+                elif action == "take":
+                    await member.remove_roles(role)
 
     async def clear_all_previous_color_roles(self, payload, member):
         guild_id = payload.guild_id
@@ -157,7 +165,12 @@ class Listener(commands.Cog):
             discord.utils.get(guild.roles, name = "Merigold"),
             discord.utils.get(guild.roles, name = "Honey"),
             discord.utils.get(guild.roles, name = "Yellow"),
-            discord.utils.get(guild.roles, name = "Light Orange")
+            discord.utils.get(guild.roles, name = "Light Orange"),
+            discord.utils.get(guild.roles, name = "Dark Cyan"),
+            discord.utils.get(guild.roles, name = "Sea Green"),
+            discord.utils.get(guild.roles, name = "Azure"),
+            discord.utils.get(guild.roles, name = "Cyan"),
+            discord.utils.get(guild.roles, name = "Light Cyan")
         ]
 
         for role in color_roles:
