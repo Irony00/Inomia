@@ -29,6 +29,7 @@ class Counter(commands.Cog):
 
         if message.author == last_message.author:
             await message.delete()
+            return
 
         if int(message.content) == int(last_message.content) + 1:
             await message.channel.edit(name = f"{message.content}┃counting")
