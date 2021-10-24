@@ -15,6 +15,7 @@ bot = commands.Bot(
 )
 
 category_list = [
+    "auto_updaters",
     "embeds",
     "features",
     "reaction_roles"
