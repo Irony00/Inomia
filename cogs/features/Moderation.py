@@ -144,7 +144,7 @@ class Moderation(commands.Cog):
         else:
             await ctx.send(f"**{ member }** is already unmuted")
     
-    @commands.command(aliases = ["clear"])
+    @commands.command(aliases = ["clear", "clean", "purge"])
     @commands.has_permissions(manage_messages = True)
     async def _clear(self, ctx, amount = 5):
         await ctx.channel.purge(limit = amount)
