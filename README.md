@@ -9,5 +9,5 @@ In order to start the bot, use the command
 ```
 python index.py
 ```
-
+\
 Thank you for helping us out in development of Inomia! ♥
