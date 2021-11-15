@@ -179,6 +179,12 @@ class Moderation(commands.Cog):
             overwrite=overwrite
         )
         await ctx.send('Channel unlocked.')
+    
+    @commands.command(aliases = ["add_emoji"])
+    @commands.has_permissions(manage_channels=True)
+    async def _add_emoji(self, ctx, emoji : discord.Emoji):
+        emoji_url = emoji.url
+        await ctx.channel.send(emoji_url)
 
 def setup(bot):
     bot.add_cog(Moderation(bot))
