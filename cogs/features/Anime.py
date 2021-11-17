@@ -87,7 +87,7 @@ class AnimeCog(commands.Cog):
         
     @commands.command(aliases=['news','aninews'])
     async def anime_news(self, ctx):
-        news = Subreddit("Anime")
+        news = Subreddit("animenews")
         news.get_random()
         url = news.url
         title = news.title
