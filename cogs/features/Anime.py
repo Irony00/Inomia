@@ -44,7 +44,10 @@ waifu = ["https://cdn.discordapp.com/attachments/902148232346497055/910401484817
         "https://cdn.discordapp.com/attachments/902148232346497055/910402785269411890/nami-ships-2-1024x576H-scaled-1200x900.jpg",
         "https://cdn.discordapp.com/attachments/902148232346497055/910404963992207360/Screenshot_20211117-111405_Google.jpg",
         "https://cdn.discordapp.com/attachments/902148232346497055/910405135472152656/1118aff26fd22e5ba8d241149f5b57c1.jpg",
-        "https://cdn.discordapp.com/attachments/902148232346497055/910405436467982366/aGpyxA6_460s.jpg"]
+        "https://cdn.discordapp.com/attachments/902148232346497055/910405436467982366/aGpyxA6_460s.jpg",
+        "https://media.discordapp.net/attachments/902148232346497055/910419935602294785/Screenshot_20211117-120818_Google.jpg",
+        "https://media.discordapp.net/attachments/902148232346497055/910419953243525150/764-7648266_sakura-haruno-sasuke-uchiha-naruto-sasusaku-sakura-haruno.png",
+        "https://media.discordapp.net/attachments/902148232346497055/910420872748236850/Screenshot_20211117-121724_Google.jpg"]
 
 husbando = ["https://cdn.discordapp.com/attachments/902148232346497055/910405573604962305/8c2d908a1de6d4a402cb614a6f1d97a2.jpg",
            "https://cdn.discordapp.com/attachments/902148232346497055/910405573827252284/650b241d5d62a6794ad2f739ef3734a7.jpg",
@@ -64,7 +67,10 @@ husbando = ["https://cdn.discordapp.com/attachments/902148232346497055/910405573
            "https://cdn.discordapp.com/attachments/902148232346497055/910408672243490836/QUIN_on_Twitter.jpg",
            "https://cdn.discordapp.com/attachments/902148232346497055/910408673212399626/Unknown.jpg",
            "https://cdn.discordapp.com/attachments/902148232346497055/910408673988329482/Unknown-4.jpg",
-           "https://cdn.discordapp.com/attachments/902148232346497055/910408676110643220/on_Twitter.png"]
+           "https://cdn.discordapp.com/attachments/902148232346497055/910408676110643220/on_Twitter.png",
+           "https://media.discordapp.net/attachments/902148232346497055/910417538914062376/Hot_Anime_Guys_book_1_-_Haruka_Nanase.jpg",
+           "https://media.discordapp.net/attachments/902148232346497055/910417568714616873/Imagenes_ZoSan_-_65.jpg", # Cropping needed for thie Image
+           "https://media.discordapp.net/attachments/902148232346497055/910417591368028230/Jujutsu_Kaisen-_A_Feiticeira.jpg"]
 
 class AnimeCog(commands.Cog):
     def __init__(self, bot):
