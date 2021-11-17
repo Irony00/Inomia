@@ -2,7 +2,6 @@ import random
 import discord
 from discord.ext import commands
 from RedditReader import Subreddit
-import random
 
 anime_quotes = ["People’s lives don’t end when they die. It ends when they lose faith.",
                "The only thing we’re allowed to do is believe that we won’t regret the choice we made.",
