@@ -47,7 +47,17 @@ waifu = ["https://cdn.discordapp.com/attachments/902148232346497055/910401484817
         "https://cdn.discordapp.com/attachments/902148232346497055/910405436467982366/aGpyxA6_460s.jpg",
         "https://media.discordapp.net/attachments/902148232346497055/910419935602294785/Screenshot_20211117-120818_Google.jpg",
         "https://media.discordapp.net/attachments/902148232346497055/910419953243525150/764-7648266_sakura-haruno-sasuke-uchiha-naruto-sasusaku-sakura-haruno.png",
-        "https://media.discordapp.net/attachments/902148232346497055/910420872748236850/Screenshot_20211117-121724_Google.jpg"]
+        "https://media.discordapp.net/attachments/902148232346497055/910420872748236850/Screenshot_20211117-121724_Google.jpg",
+        "https://media.discordapp.net/attachments/902148232346497055/910448660800753674/jhjsdbruohq51.png",
+        "https://media.discordapp.net/attachments/902148232346497055/910448689452036106/p0irsj6gwgk51.png",
+        "https://media.discordapp.net/attachments/902148232346497055/910448701095424000/34h3n4v8v9171.jpg",
+        "https://media.discordapp.net/attachments/902148232346497055/910448717063147550/gcapy3u3wru51.png",
+        "https://media.discordapp.net/attachments/902148232346497055/910448739737550938/16kv08wn7lx61.png",
+        "https://media.discordapp.net/attachments/902148232346497055/910448963499491358/5hwtp2dwmkd71.png",
+        "https://media.discordapp.net/attachments/902148232346497055/910448964237672448/ekp3i7426an71.jpg",
+        "https://media.discordapp.net/attachments/902148232346497055/910448979358121984/4yo8d5uw5az41.jpg",
+        "https://media.discordapp.net/attachments/902148232346497055/910449010245005342/ucC8yf7.jpg",
+        "https://media.discordapp.net/attachments/902148232346497055/910449010639245332/27450f63652e69af8ced66791ab2a424.jpg"]
 
 husbando = ["https://cdn.discordapp.com/attachments/902148232346497055/910405573604962305/8c2d908a1de6d4a402cb614a6f1d97a2.jpg",
            "https://cdn.discordapp.com/attachments/902148232346497055/910405573827252284/650b241d5d62a6794ad2f739ef3734a7.jpg",
