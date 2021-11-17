@@ -27,8 +27,7 @@ class Greetings(commands.Cog):
             f"It is perilous to study too deeply the arts of **<@{ new_member.id }>**, for good or for ill.",
             f"Initializing welcome system for **<@{ new_member.id }>**...",
             f"**<@{ new_member.id }>**, you can't fight in here! This is the War Room!",
-            f"Arise, arise Angels of Insomnia! Fell deeds awake: bugs and crashes! Mice shall be shaken, keyboards be splintered, a sleep day, a red day, ere the sun rises! Ride now, ride now! Ride to Hunter Reilly! Welcome **<@{ new_member.id }>**.",
-            f"Tumhara idhar ana he subse bari galti thi, bhukto ab. <@{ new_member.id }>"
+            f"Arise, arise Angels of Insomnia! Fell deeds awake: bugs and crashes! Mice shall be shaken, keyboards be splintered, a sleep day, a red day, ere the sun rises! Ride now, ride now! Ride to Hunter Reilly! Welcome **<@{ new_member.id }>**."
         ]
 
         # Embed
