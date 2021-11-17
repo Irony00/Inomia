@@ -1,5 +1,3 @@
-21 lines (17 sloc)  1.27 KB
-   
 import discord
 from discord.ext import commands
 import random
