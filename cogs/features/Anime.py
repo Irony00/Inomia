@@ -33,7 +33,6 @@ anime_quotes = ["People’s lives don’t end when they die. It ends when they l
                ]
 waifu = ["https://cdn.discordapp.com/attachments/902148232346497055/910401484817072178/best-mikasa-ackerman-quotes-1200x900.jpg",
         "https://cdn.discordapp.com/attachments/902148232346497055/910401485022589038/206357.jpg",
-        "https://cdn.discordapp.com/attachments/902148232346497055/910401485274218546/kaguya3-1000x600.jpg",
         "https://cdn.discordapp.com/attachments/902148232346497055/910401876384690186/kanao.jpg",
         "https://cdn.discordapp.com/attachments/902148232346497055/910401942335922176/anime-girls-hayasaka-ai-hd-wallpaper-preview-1.jpg",
         "https://cdn.discordapp.com/attachments/902148232346497055/910401942612750386/shinobu-sword.jfif_-1.jpg",
