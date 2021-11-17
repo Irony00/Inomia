@@ -5,7 +5,7 @@ class Support(commands.Cog):
     def __init__(self, bot):
       self.bot = bot
       
-    @commands.command()
+    @commands.command(aliases = ["feedback", "fb"])
     async def _feedback(self, ctx, *args):
         feedback = " ".join(args)
         user = ctx.message.author
