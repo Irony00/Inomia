@@ -202,7 +202,7 @@ class Moderation(commands.Cog):
         await ctx.send(f'Successfully created emoji <:{name}:{emoji.id}>')
     
     @commands.command()
-    @command.has_permissions(manage_emojis=True)
+    @commands.has_permissions(manage_emojis=True)
     async def delemo(self, ctx, name):
         for Emoji in ctx.guild.emojis:
             if Emoji.name == name:
