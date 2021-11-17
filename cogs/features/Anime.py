@@ -21,7 +21,7 @@ anime_quotes = ["People’s lives don’t end when they die. It ends when they l
                "People who can’t throw something important away, can never hope to change anything.",
                "I yearn for true gender equality. I have no patience for one who talks about female privilege when it suits them, and then complains about someone “not being a man” when it’s convenient.",
                "No matter how hard or impossible it is, never lose sight of your goal.",
-               "There was no place for me, so i had to make one for myself, and then i realized, i had a place, but i was the only one in it. I didn’t know any other way to live.”,
+               "There was no place for me, so i had to make one for myself, and then i realized, i had a place, but i was the only one in it. I didn’t know any other way to live.",
                "Human beings are strong because we can change ourselves.",
                "I have no fear of death. It just means dreaming in silence. A dream that lasts for eternity.",
                "It will do no good to fight with hate in your heart.",
