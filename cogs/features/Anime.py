@@ -116,4 +116,6 @@ class AnimeCog(commands.Cog):
         em =  discord.Embed(title="Husbando", colour = discord.Colour.blue())
         em.set_image(url=random.choice(husbando))
         await ctx.send(embed=em)
-    
+
+def setup(bot):
+    bot.add_cog(AnimeCog(bot))
