@@ -6,7 +6,7 @@ class Support(commands.Cog):
       self.bot = bot
       
     @commands.command()
-    async def _feedback(self, *args):
+    async def _feedback(self, ctx, *args):
         feedback = " ".join(args)
         user = ctx.message.author
         await ctx.send('Your feedback has been sent!')
