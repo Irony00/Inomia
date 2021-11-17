@@ -14,7 +14,7 @@ class Support(commands.Cog):
         msg = await channel.send(f'**New Feedback by {user}:** {feedback}')
         await msg.add_reaction('✅')
         await msg.add_reaction('⛔')
-        await ctx.message.delete
+        await ctx.message.delete()
         
 def setup(bot):
     bot.add_cog(Support(bot))
