@@ -31,6 +31,7 @@ anime_quotes = ["People’s lives don’t end when they die. It ends when they l
                "The universe has a beginning, but no end. — Infinity. Stars, too, have their own beginnings, but their own power results in their destruction. — Finite.",
                "If you want to grant your own wish, then you should clear your own path to it."
                ]
+"""
 waifu = ["https://cdn.discordapp.com/attachments/902148232346497055/910401876384690186/kanao.jpg",
         "https://cdn.discordapp.com/attachments/902148232346497055/910401942335922176/anime-girls-hayasaka-ai-hd-wallpaper-preview-1.jpg",
         "https://cdn.discordapp.com/attachments/902148232346497055/910401942612750386/shinobu-sword.jfif_-1.jpg",
@@ -55,7 +56,9 @@ waifu = ["https://cdn.discordapp.com/attachments/902148232346497055/910401876384
         "https://media.discordapp.net/attachments/902148232346497055/910448979358121984/4yo8d5uw5az41.jpg",
         "https://media.discordapp.net/attachments/902148232346497055/910449010245005342/ucC8yf7.jpg",
         "https://media.discordapp.net/attachments/902148232346497055/910449010639245332/27450f63652e69af8ced66791ab2a424.jpg"]
+"""
 
+"""
 husbando = ["https://cdn.discordapp.com/attachments/902148232346497055/910405573604962305/8c2d908a1de6d4a402cb614a6f1d97a2.jpg",
            "https://cdn.discordapp.com/attachments/902148232346497055/910405573827252284/650b241d5d62a6794ad2f739ef3734a7.jpg",
            "https://cdn.discordapp.com/attachments/902148232346497055/910405574032752680/1d893e7941fe52525e896d567767cf98.jpg",
@@ -78,6 +81,7 @@ husbando = ["https://cdn.discordapp.com/attachments/902148232346497055/910405573
            "https://media.discordapp.net/attachments/902148232346497055/910417538914062376/Hot_Anime_Guys_book_1_-_Haruka_Nanase.jpg",
            "https://media.discordapp.net/attachments/902148232346497055/910417568714616873/Imagenes_ZoSan_-_65.jpg", # Cropping needed for thie Image
            "https://media.discordapp.net/attachments/902148232346497055/910417591368028230/Jujutsu_Kaisen-_A_Feiticeira.jpg"]
+"""
 
 class AnimeCog(commands.Cog):
     def __init__(self, bot):
@@ -121,15 +125,31 @@ class AnimeCog(commands.Cog):
         
     @commands.command()
     async def waifu(self, ctx):
-        im = random.choice(waifu)
+        #im = random.choice(waifu)
         em = discord.Embed(title="Waifu", colour = discord.Colour.blue())
-        em.set_image(url=im)
+        waifu = Subreddit("AnimeGirls")
+        waifu.get_random()
+        url = waifu.url
+        title = waifu.title
+        upvotes = waifu.upvotes
+        comments = waifu.comments
+        em.set_image(url=url)
+        em.set_footer(text=f"powered by Inomia Devs | {upvotes} votes | {comments} comments")
+        #em.set_image(url=im)
         await ctx.send(embed=em)
     
     @commands.command()
     async def husbando(self, ctx):
         em =  discord.Embed(title="Husbando", colour = discord.Colour.blue())
-        em.set_image(url=random.choice(husbando))
+        hub = Subreddit("Husbando")
+        hub.get_random()
+        url = hub.url
+        title = hub.title
+        upvotes = hub.upvotes
+        comments = hub.comments
+        em.set_image(url=url)
+        em.set_footer(text=f"powered by Inomia Devs | {upvotes} votes | {comments} comments")
+        #em.set_image(url=random.choice(husbando))
         await ctx.send(embed=em)
 
 def setup(bot):
