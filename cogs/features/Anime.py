@@ -126,13 +126,13 @@ class AnimeCog(commands.Cog):
     @commands.command()
     async def waifu(self, ctx):
         #im = random.choice(waifu)
-        em = discord.Embed(title="Waifu", colour = discord.Colour.blue())
         waifu = Subreddit(random.choice(["AnimeGirls","Waifu","waifuism"]))
         waifu.get_random()
         url = waifu.url
         title = waifu.title
         upvotes = waifu.upvotes
         comments = waifu.comments
+        em = discord.Embed(title=title, colour = discord.Colour.blue())
         em.set_image(url=url)
         em.set_footer(text=f"powered by Inomia Devs | {upvotes} votes | {comments} comments")
         #em.set_image(url=im)
@@ -140,13 +140,13 @@ class AnimeCog(commands.Cog):
     
     @commands.command()
     async def husbando(self, ctx):
-        em =  discord.Embed(title="Husbando", colour = discord.Colour.blue())
         hub = Subreddit("Husbando")
         hub.get_random()
         url = hub.url
         title = hub.title
         upvotes = hub.upvotes
         comments = hub.comments
+        em =  discord.Embed(title=title, colour = discord.Colour.blue())
         em.set_image(url=url)
         em.set_footer(text=f"powered by Inomia Devs | {upvotes} votes | {comments} comments")
         #em.set_image(url=random.choice(husbando))
