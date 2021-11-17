@@ -203,11 +203,11 @@ class Moderation(commands.Cog):
     
     @commands.command()
     @command.has_permissions(manage_emojis=True)
-     async def delemo(self, ctx, name):
-         for Emoji in ctx.guild.emojis:
-             if Emoji.name == name:
-                 await Emoji.delete()
-                 await ctx.send(f"Deleted emoji '{name}'")
+    async def delemo(self, ctx, name):
+        for Emoji in ctx.guild.emojis:
+            if Emoji.name == name:
+                await Emoji.delete()
+                await ctx.send(f"Deleted emoji '{name}'")
    
 
 def setup(bot):
