@@ -12,9 +12,9 @@ class SugsCog(commands.Cog):
 
     @commands.Cog.listener()
     async def on_command_completion(self, ctx):
-      adPer = random.randrange(0, 30)
-      if adPer < 2:
-        await ctx.send(random.choice(easter))
+        adPer = random.randrange(0, 30)
+        if adPer < 2:
+            await ctx.send(random.choice(easter))
 
 def setup(bot):
     bot.add_cog(SugsCog(bot))
