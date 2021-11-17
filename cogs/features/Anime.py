@@ -122,11 +122,7 @@ class AnimeCog(commands.Cog):
     @commands.command()
     async def waifu(self, ctx):
         im = random.choice(waifu)
-        em = discord.Embed(
-          title="Waifu", 
-          description = im,
-          colour = discord.Colour.blue()
-        )
+        em = discord.Embed(title="Waifu", colour = discord.Colour.blue())
         em.set_image(url=im)
         await ctx.send(embed=em)
     
