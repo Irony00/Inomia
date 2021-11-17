@@ -199,7 +199,7 @@ class Moderation(commands.Cog):
         except:
             b_val = r.content
         emoji = await guild.create_custom_emoji(image=b_val, name=name)
-        await ctx.respond(f'Successfully created emoji <:{name}:{emoji.id}>')
+        await ctx.send(f'Successfully created emoji <:{name}:{emoji.id}>')
     
     @commands.command()
     @command.has_permissions(manage_emojis=True)
@@ -207,7 +207,7 @@ class Moderation(commands.Cog):
          for Emoji in ctx.guild.emojis:
              if Emoji.name == name:
                  await Emoji.delete()
-                 await ctx.respond(f"Deleted emoji '{name}'")
+                 await ctx.send(f"Deleted emoji '{name}'")
    
 
 def setup(bot):
