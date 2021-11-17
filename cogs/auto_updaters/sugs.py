@@ -2,7 +2,6 @@
    
 import discord
 from discord.ext import commands
-from discord.commands import slash_command
 import random
 
 easter = ["Keep the rules in mind and enjoy your time here ^-^","You can give your feedback abt the bot using the feedback command","You can get support here:- https://discord.gg/UYBKcTYzyU"]
