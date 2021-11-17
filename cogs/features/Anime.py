@@ -127,7 +127,7 @@ class AnimeCog(commands.Cog):
     async def waifu(self, ctx):
         #im = random.choice(waifu)
         em = discord.Embed(title="Waifu", colour = discord.Colour.blue())
-        waifu = Subreddit("AnimeGirls")
+        waifu = Subreddit(random.choice(["AnimeGirls","Waifu","waifuism"]))
         waifu.get_random()
         url = waifu.url
         title = waifu.title
