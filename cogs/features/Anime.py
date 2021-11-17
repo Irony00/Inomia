@@ -31,8 +31,7 @@ anime_quotes = ["People’s lives don’t end when they die. It ends when they l
                "The universe has a beginning, but no end. — Infinity. Stars, too, have their own beginnings, but their own power results in their destruction. — Finite.",
                "If you want to grant your own wish, then you should clear your own path to it."
                ]
-waifu = ["https://cdn.discordapp.com/attachments/902148232346497055/910401484817072178/best-mikasa-ackerman-quotes-1200x900.jpg",
-        "https://cdn.discordapp.com/attachments/902148232346497055/910401876384690186/kanao.jpg",
+waifu = ["https://cdn.discordapp.com/attachments/902148232346497055/910401876384690186/kanao.jpg",
         "https://cdn.discordapp.com/attachments/902148232346497055/910401942335922176/anime-girls-hayasaka-ai-hd-wallpaper-preview-1.jpg",
         "https://cdn.discordapp.com/attachments/902148232346497055/910401942612750386/shinobu-sword.jfif_-1.jpg",
         "https://cdn.discordapp.com/attachments/902148232346497055/910402061974249502/Hinata-Hyuuga-0oADZx5CL-b.jpg",
