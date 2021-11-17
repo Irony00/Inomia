@@ -2,6 +2,8 @@ import random
 import asyncio
 import discord
 from discord.ext import commands
+from io import BytesIO
+import requests
 
 class Moderation(commands.Cog):
     def __init__(self, bot):
@@ -185,6 +187,28 @@ class Moderation(commands.Cog):
     async def _add_emoji(self, ctx, emoji : discord.Emoji):
         emoji_url = emoji.url
         await ctx.channel.send(emoji_url)
+        
+    @commands.command()
+    @commands.has_permissions(manage_emojis=True)
+    async def _emoji(self, ctx, name, link):
+        guild = ctx.guild
+        r = requests.get(link)
+        try:
+            img = BytesIO(r.content)
+            b_val = img.getvalue()
+        except:
+            b_val = r.content
+        emoji = await guild.create_custom_emoji(image=b_val, name=name)
+        await ctx.respond(f'Successfully created emoji <:{name}:{emoji.id}>')
+    
+    @commands.command()
+    @command.has_permissions(manage_emojis=True)
+     async def delemo(self, ctx, name):
+         for Emoji in ctx.guild.emojis:
+             if Emoji.name == name:
+                 await Emoji.delete()
+                 await ctx.respond(f"Deleted emoji '{name}'")
+   
 
 def setup(bot):
     bot.add_cog(Moderation(bot))
