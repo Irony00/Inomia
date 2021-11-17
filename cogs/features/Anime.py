@@ -56,7 +56,14 @@ husbando = ["https://cdn.discordapp.com/attachments/902148232346497055/910405573
            "https://cdn.discordapp.com/attachments/902148232346497055/910405659525267516/e9705c9c51e53e65c0ee183442635547.jpg",
            "https://cdn.discordapp.com/attachments/902148232346497055/910405686964412456/07a1f0987fc69c04273d18cc95aaf9c5.jpg",
            "https://cdn.discordapp.com/attachments/902148232346497055/910405687153164328/90065dd28f376554311d8f0b132519d0.jpg",
-           "https://cdn.discordapp.com/attachments/902148232346497055/910405687446732810/7e9090859b7a0c4540ab23fbda373f16.jpg"]
+           "https://cdn.discordapp.com/attachments/902148232346497055/910405687446732810/7e9090859b7a0c4540ab23fbda373f16.jpg",
+           "https://cdn.discordapp.com/attachments/902148232346497055/910408667642335282/Painter_of_the_Night_-_Sezon_iki_-_Cilt_2.jpg",
+           "https://cdn.discordapp.com/attachments/902148232346497055/910408668841922570/Unknown-2.jpg",
+           "https://cdn.discordapp.com/attachments/902148232346497055/910408669873717288/Unknown-3.jpg",
+           "https://cdn.discordapp.com/attachments/902148232346497055/910408672243490836/QUIN_on_Twitter.jpg",
+           "https://cdn.discordapp.com/attachments/902148232346497055/910408673212399626/Unknown.jpg",
+           "https://cdn.discordapp.com/attachments/902148232346497055/910408673988329482/Unknown-4.jpg",
+           "https://cdn.discordapp.com/attachments/902148232346497055/910408676110643220/on_Twitter.png"]
 
 class AnimeCog(commands.Cog):
     def __init__(self, bot):
