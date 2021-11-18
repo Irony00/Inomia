@@ -137,8 +137,8 @@ class AnimeCog(commands.Cog):
         em.set_footer(text=f"powered by Inomia Devs | {upvotes} votes | {comments} comments")
         #em.set_image(url=im)
         await ctx.send(embed=em)
-    
-    @commands.command()
+
+@commands.command()
     async def husbando(self, ctx):
         hub = Subreddit("Husbando")
         hub.get_random()
@@ -146,6 +146,20 @@ class AnimeCog(commands.Cog):
         title = hub.title
         upvotes = hub.upvotes
         comments = hub.comments
+        em =  discord.Embed(title=title, colour = discord.Colour.blue())
+        em.set_image(url=url)
+        em.set_footer(text=f"powered by Inomia Devs | {upvotes} votes | {comments} comments")
+        #em.set_image(url=random.choice(husbando))
+        await ctx.send(embed=em)
+    
+    @commands.command()
+    async def husbando(self, ctx):
+        hentai = Subreddit("hentai")
+        hentai.get_random()
+        url = hentai.url
+        title = hentai.title
+        upvotes = hentai.upvotes
+        comments = hentai.comments
         em =  discord.Embed(title=title, colour = discord.Colour.blue())
         em.set_image(url=url)
         em.set_footer(text=f"powered by Inomia Devs | {upvotes} votes | {comments} comments")
