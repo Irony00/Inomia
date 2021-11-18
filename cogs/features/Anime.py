@@ -152,8 +152,8 @@ class AnimeCog(commands.Cog):
         #em.set_image(url=random.choice(husbando))
         await ctx.send(embed=em)
     
-    @commands.command()
-    async def hentai(self, ctx):
+      @commands.command()
+      async def hentai(self, ctx):
         hentai = Subreddit("hentai")
         hentai.get_random()
         url = hentai.url
