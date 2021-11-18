@@ -154,6 +154,11 @@ class AnimeCog(commands.Cog):
     
     @commands.command()
     async def hentai(self, ctx):
+        insomnia_guild_id = 898127603309899806
+        if ctx.message.guild.id == insomnia_guild_id:
+            await ctx.send("This feature has been **disabled** in this server.")
+            return
+          
         hentai = Subreddit("hentai")
         hentai.get_random()
         url = hentai.url
