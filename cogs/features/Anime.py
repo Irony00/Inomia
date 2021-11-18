@@ -153,7 +153,7 @@ class AnimeCog(commands.Cog):
         await ctx.send(embed=em)
     
     @commands.command()
-    async def husbando(self, ctx):
+    async def hentai(self, ctx):
         hentai = Subreddit("hentai")
         hentai.get_random()
         url = hentai.url
