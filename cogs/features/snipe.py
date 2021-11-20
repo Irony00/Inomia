@@ -7,14 +7,14 @@ class SnipeCog(commands.Cog):
         self.snipe = {}
 
     @commands.Cog.listener()
-    async def on_message_delete(message):
+    async def on_message_delete(self,message):
         self.snipe[message.channel.id]["author"] = message.author             
         self.snipe[message.channel.id]["content"] = message.content
         await sleep (60)
         del snipe_message[message.channel.id]
 
     @commands.command()
-    async def snipe(ctx):
+    async def snipe(self,ctx):
         channel = ctx.channel
         content = self.snipe[channel.id]["content"]
         author = self.snipe[channel.id]["author"]
