@@ -16,9 +16,11 @@ class SnipeCog(commands.Cog):
     @commands.command()
     async def snipe(ctx):
         channel = ctx.channel
+        content = self.snipe[channel.id]["content"]
+        author = self.snipe[channel.id]["author"]
         try: 
-            em = discord.Embed(name = f"gottem #{channel.name}", description = self.snipe[channel.id]["content"])
-            em.set_footer(text = f"this man {self.snipe[channel.id]["author"]}")
+            em = discord.Embed(name = f"gottem #{channel.name}", description = content)
+            em.set_footer(text = f"this man {author}")
             await ctx.send(embed = em)
         except: 
             await ctx.send(f"There are no recent deleted messages in #{channel.name}")
