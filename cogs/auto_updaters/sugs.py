@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 import random
 
-easter = ["Keep the rules in mind and enjoy your time here ^-^","You can give your feedback abt the bot using the feedback command","You can get support here:- https://discord.gg/UYBKcTYzyU"]
+easter = ["The credit for the spicy hot waifu and husbando pics go to Tanjiro#3129, yami#2835, SALMON#8537. True legends :pray: ","Keep the rules in mind and enjoy your time here ^-^","You can give your feedback abt the bot using the feedback command","You can get support here:- https://discord.gg/UYBKcTYzyU"]
 
 class SugsCog(commands.Cog):
     def __init__(self, bot):
