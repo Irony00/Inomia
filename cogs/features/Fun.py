@@ -8,6 +8,7 @@ class Fun(commands.Cog):
         self.snipe = {
             "content": None,
             "author": None,
+            "author_pfp": None,
             "message_id": None
         }
 
@@ -15,12 +16,14 @@ class Fun(commands.Cog):
     async def on_message_delete(self, message):
         self.snipe["content"] = message.content
         self.snipe["author"] = message.author
+        self.snipe["author_pfp"] = message.author.avatar_url
         self.snipe["message_id"] = message.id
         await asyncio.sleep(60)
 
         if message.id == self.snipe["message_id"]:
             self.snipe["content"] = None
             self.snipe["author"] = None
+            self.snipe["author_pfp"] = None
             self.snipe["message_id"] = None
 
     @commands.command(aliases = ["snipe", "s"])
@@ -34,8 +37,9 @@ class Fun(commands.Cog):
             description = self.snipe["content"],
             color = discord.Color.blue()
         )
-        
         em.set_footer(text = self.snipe["author"])
+        em.set_thumbnail(url = self.snipe["author_pfp"])
+
         await ctx.send(embed = em)
 
 def setup(bot):
