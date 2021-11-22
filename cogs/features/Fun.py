@@ -35,7 +35,7 @@ class Fun(commands.Cog):
         em = discord.Embed(
             title = "Caught ya!", 
             description = self.snipe["content"],
-            color = discord.Color.blue()
+            color = discord.Color.purple()
         )
         em.set_footer(text = self.snipe["author"])
         em.set_thumbnail(url = self.snipe["author_pfp"])
