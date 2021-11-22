@@ -126,7 +126,7 @@ class AnimeCog(commands.Cog):
     @commands.command()
     async def waifu(self, ctx):
         #im = random.choice(waifu)
-        waifu = Subreddit("waifu")
+        waifu = Subreddit(random.choice["waifu","Animewallpaper"])
         waifu.get_random()
         url = waifu.url
         title = waifu.title
