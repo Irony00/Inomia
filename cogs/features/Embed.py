@@ -9,22 +9,22 @@ class EmbedCog(commands.Cog):
     @commands.command()
     async def embed(self,ctx):
         await ctx.send("Enter title for embed (Enter skip or none to skip)")
-        title = self.bot.wait_for('message',check = lambda message: message.author == ctx.author,timeout=30)
+        title = await self.bot.wait_for('message',check = lambda message: message.author == ctx.author,timeout=30)
         if title.content == "none" or title.content == "skip":
             title.content = " "
         await ctx.send("Enter the url for image to be attached (skip/none if not applicable)")
-        image = self.bot.wait_for('message',check = lambda message: message.author == ctx.author,timeout=30)
+        image = await self.bot.wait_for('message',check = lambda message: message.author == ctx.author,timeout=30)
         if image.content == "none" or image.content == "skip":
             image.content = " "
         await ctx.send("Enter the number of fields(an integer from 0-10) you want in your embed (skip/none to skip)")
-        fnum = self.bot.wait_for('message',check = lambda message: message.author == ctx.author,timeout=30)
+        fnum = await self.bot.wait_for('message',check = lambda message: message.author == ctx.author,timeout=30)
         if fnum.content == "none" or fnum.content == "skip":
             fnum.content = " "
         for i in range(int(fnum.content)):
             await ctx.send("Enter name of field")
-            field = self.bot.wait_for('message',check = lambda message: message.author == ctx.author,timeout=30)
+            field = await self.bot.wait_for('message',check = lambda message: message.author == ctx.author,timeout=30)
             await ctx.send("Enter value of field")
-            fieldval = self.bot.wait_for('message',check = lambda message: message.author == ctx.author,timeout=30)
+            fieldval = await self.bot.wait_for('message',check = lambda message: message.author == ctx.author,timeout=30)
             dict = self.emdict
             dict[ctx.author.id][field.content] = fieldval.content
         em = discord.Embed(title=title)
@@ -33,7 +33,7 @@ class EmbedCog(commands.Cog):
         for i in self.dict[ctx.author.id]:
             em.add_field(name=i,value=self.dict[ctx.author.id][i])
         await ctx.send("Enter channelid of the channel where u want to send the embed")
-        channel = self.bot.wait_for('message',check = lambda message: message.author == ctx.author,timeout=30)
+        channel = await self.bot.wait_for('message',check = lambda message: message.author == ctx.author,timeout=30)
         ch = self.bot.fetch_channel(channel.content)
         await ch.send(embed=em)
         
