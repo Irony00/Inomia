@@ -25,7 +25,7 @@ class EmbedCog(commands.Cog):
         em.add_field(name = field,value = fieldval)        
         await ctx.send("Enter channelid of the channel where u want to send the embed")
         channel = await self.bot.wait_for('message',check = lambda message: message.author == ctx.author,timeout=30)
-        ch = self.bot.get_channel(channel.content)
+        ch = self.bot.get_channel(int(channel.content))
         await ch.send(embed=em)
         
         
