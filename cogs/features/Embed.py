@@ -19,10 +19,10 @@ class EmbedCog(commands.Cog):
         field = await self.bot.wait_for('message',check = lambda message: message.author == ctx.author,timeout=30)
         await ctx.send("Enter value of field")
         fieldval = await self.bot.wait_for('message',check = lambda message: message.author == ctx.author,timeout=30)
-        em = discord.Embed(title=title)
+        em = discord.Embed(title=title.content)
         if image.content != " ":
-            em.set_image(image)
-        em.add_field(name = field,value = fieldval)        
+            em.set_image(image.content)
+        em.add_field(name = field.content,value = fieldval.content)        
         await ctx.send("Enter channelid of the channel where u want to send the embed")
         channel = await self.bot.wait_for('message',check = lambda message: message.author == ctx.author,timeout=30)
         ch = self.bot.get_channel(int(channel.content))
