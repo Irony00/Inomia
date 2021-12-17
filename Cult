@@ -1,11 +1,12 @@
 import discord
+import asyncio
 import discord.utlis
 from discord.ext import commands
 from discord.utilis import get
 
-@bot.command(pass_context==True)
-@command.has_permission("Moderator")
-async def addrole(ctx):
+@bot.command(aliases = ["role", "giverole"])
+@command.has_permission("manage_roles = True")
+async def _role(ctx):
      member = ctx.message.author
      role = get(member.server.roles, name="Drug Gang")
-     await bot.add_roles(member,role)
+     await bot.roles(member,role)
