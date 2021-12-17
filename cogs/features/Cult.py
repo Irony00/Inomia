@@ -8,7 +8,7 @@ class Cult(commands.Cog):
         self.bot = bot
           
     @commands.command()
-    @has_permissions(administrator=True)
+    @commands.has_permissions(administrator=True)
     async def addrole(ctx, role: discord.Role, user: discord.Member):
         await user.add_roles(role)
         await ctx.send(f"Assigned [role.mention] to [user.mention]")
