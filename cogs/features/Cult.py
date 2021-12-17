@@ -9,10 +9,9 @@ class Cult(commands.Cog):
           
     @commands.command()
     @commands.has_permissions(administrator=True)
-    async def addrole(ctx, role: discord.Role, user: discord.User):
+    async def addrole(ctx, role: discord.Role, user):
         guild = ctx.guild
-        us = ctx.message.mentions[1].id
-        mem = guild.get_member(us)
+        mem = guild.get_member(int(user))
         await mem.add_roles(role)
         await ctx.send(f"Assigned {role.mention} to {mem.mention}")
 
